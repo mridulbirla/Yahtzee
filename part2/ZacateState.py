@@ -38,7 +38,6 @@ class Scorecard:
     def record(self, category, roll):
         dice = roll.dice
         counts = [dice.count(i) for i in range(1,7)]
-
         if category in self.scorecard:
             print "Error: category already full!"
 

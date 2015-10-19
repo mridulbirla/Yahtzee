@@ -31,7 +31,8 @@ for i in range(0, 100):
         print "\n * Turn " + str(i)
 
         # first roll
-        d.roll()
+        d.dice=sorted(d.roll())
+
         print "   Roll #1: " + str(d)
         which_to_reroll = ap.first_roll(d, s)
 
